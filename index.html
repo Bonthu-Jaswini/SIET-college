@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIET Campus Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+
+    
+    <div class="logo-box">
+      <img src="https://res.cloudinary.com/da48lsk9o/image/upload/v1778736761/Logo2_mtdxbq.jpg"
+        alt="SIET Logo">
+    </div>
+
+  
+    <div class="title-box">
+      <h1>SRINIVASA</h1>
+      <p>INSTITUTE OF ENGINEERING AND TECHNOLOGY</p>
+      <span>AN AUTONOMOUS INSTITUTION</span>
+    </div>
+
+  </div>
+
+  
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#departments">Departments</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+  
+  
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Welcome to SIET</h2>
+      <p>Empowering Students with Knowledge and Innovation</p>
+    </div>
+  </section>
+
+  
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Srinivasa Institute of Engineering and Technology is committed to providing
+      quality technical education and shaping future engineers.
+    </p>
+  </section>
+
+  
+  <section class="departments" id="departments">
+    <h2>Departments</h2>
+
+    <div class="dept-buttons">
+      <button>CSE</button>
+      <button>ECE</button>
+      <button>EEE</button>
+      <button>MECH</button>
+      <button>CIVIL</button>
+    </div>
+  </section>
+
+  
+  <section class="about" id="admissions">
+    <h2>Admissions</h2>
+    <p>
+      Admissions are open for all branches. Contact college office for more details.
+    </p>
+  </section>
+
+
+  <footer class="footer" id="contact">
+    <p>© 2026 Srinivasa Institute of Engineering and Technology</p>
+    <p>Contact: info@siet.edu.in</p>
+  </footer>
+
+
+  
+  <script>
+    
+    document.querySelectorAll(".navbar a").forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+          .scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+
+</body>
+</html>
